@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAB</title>
+    <link rel="stylesheet" href="Page1.css">  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Main.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <div class="Container">
+         
+            <div class="Navbar2">
+                 <div class="Navbar2-Content" style="display: flex; Justify-content: space-between;">
+                      <div class="Circle-Image"> 
+                           <img src="Image/icontechiedoods.png" alt="" style="filter: opacity(1.5);border-radius: 50%;height: 100%;width: 100%">
+                      </div>
+                      <div class="CN">
+                          <h1>Collaborative Authors Book</h1>
+                          <h3>TAG line</h6>
+                      </div>
+                      <div class="Circle-Image2">
+                        <img src="Image/image4.png" alt="">
+                      </div>
+                      
+                 </div>
+            </div>
+            <div class="Navbar3"> 
+                <div class="Navbar3-Content" style="display: flex; align-items: center;height: 80px;justify-content: space-between;">
+                    <div class="AncharTag">
+                        <a href="#" class="Active Focus">Home</a>
+                        <a href="#" class="Active2">Books</a>
+                    </div>
+                <div class="SearchBox">      
+                    <!-- <div>
+                        <div style="background-color: white;width: 30px; height: 30px; margin-top: 10px;"><img src="Image/SearchIcon.png" alt="" style="width: 30px; height: 30px;"></div>                       
+                    </div>               -->
+                     <input type="text"  placeholder="Search" style="font-size: 20px;padding: 10px;width: 200px;margin-right: 10px;border-radius: 20px;border: none;">  
+                </div>
+                    
+               </div>
+            </div>
+            <div class="Pages">
+            <div class="MainContent">
+                  <div class="Box">                      
+                             <div class="RecangleBox">
+                                 <!-- <img src="Image/book.jfif" alt="" style=" width: 165px;"> -->
+                                 <img src="Image/Book_gif.gif" alt="" style=" width: 165px;">
+                             </div>
+                  </div>
+                  <div class="Para">
+                      <div class="content" style="margin: 50px;margin-top: 25px;">
+                              <h1>About Author</h1><br><br>
+                              <p style="font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae placeat quae inventore aperiam,a doloribus rem alias rerum vero? Aut nam quibusdam similique amet ipsa eveniet nulla, cum sit in.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae placeat quae inventore aperiam,a doloribus rem alias rerum vero? Aut nam quibusdam similique amet ipsa eveniet nulla, cum sit in.
+                              </p><br>
+
+                              <p style="font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae placeat quae inventore aperiam,a doloribus rem alias rerum vero? Aut nam quibusdam similique amet ipsa eveniet nulla, cum sit in.
+
+                              </p><br>
+                             <p style="font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae placeat quae inventore aperiam,a doloribus rem alias rerum vero? Aut nam quibusdam similique amet ipsa eveniet nulla, cum sit in.
+
+                             </p><br>
+                            
+                             <div class="Buttons">  
+                                              
+                                <button style="margin-right: 30px; padding: 5px 10px;border-radius: 12px;background-color: gray; color: white;">Email</button>
+                                <button style="margin-right: 30px; padding: 5px 10px;border-radius: 12px;background-color:gray; color: white;">Phone</button>
+                                <button style="margin-right: 30px; padding: 5px 10px;border-radius: 12px;background-color: gray; color: white;">Address</button>                                                       
+                                 
+                           </div>
+                     
+                        </div>
+                  </div>
+                
+                 
+            </div>
+            <div class="Navbar4"> 
+                <div class="Navbar4-Content" style="display: flex; align-items: center;height: 80px;justify-content: space-between">
+                    <div class="AncharTag">
+                        <a href="#" class="Active3 Focus">BookList</a>
+                        <a href="#" class="Active4">Contributors</a>
+                    </div>
+                    <div class="SearchBox1">                                           
+                        <button id="button" style="font-size: 20px;padding: 10px;width: 150px;margin-right: 23px;">New Book</button> 
+                        <button id="ckeditorbtn" style="font-size: 20px;padding: 10px;width: 150px;margin-right: 23px;">CK Editior</button>
+                   </div>
+                </div>                   
+            </div>   
+                 
+           <div class="Grid" style="margin: 20px;">
+                <table id="mytable">
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Book Title</th>
+                        <th>Description</th>
+                        <th>Date Created</th>
+                        <th>Creator</th>
+                        <th>Reviews</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>CAB</td>
+                        <td>Sample Book</td>
+                        <td>29/07/2021</td>
+                        <td>Vinith</td>
+                        <td><img src="Image/star.png" alt="" class="img1"> <img src="Image/star.png" alt=""> <img src="Image/star.png" alt=""> <img src="Image/star.png" alt=""> <img src="Image/emtstar.png" alt=""></td>
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+                </table>
+           </div>
+
+           <div class="Grid1" style="margin: 20px;">
+            <table>
+                <tr>
+                    <th>Topic</th>
+                    <th>Contributor ID</th>
+                    <th>Name</th>
+                    <th>Date Created</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>File</th>
+                </tr>
+                <tr>
+                    <td>Introduction</td>
+                    <td>01</td>
+                    <td>Vinith</td>
+                    <td>29/07/2021</td>
+                    <td>Vinith@gmail.com</td>
+                    <td>+91 9098765432</td>                       
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+      </div>
+      <div class="CK">
+        <textarea name="content" id="" cols="30" rows="30" class="ckeditor"></textarea>
+        <button style="float: right;margin-right: 20px;margin-top: 20px;">Submit</button>
+     </div>
+      <div class="bg-model">
+              <div class="Model-content">
+                  <div style="display: flex;justify-content: center; align-items: center;">
+                    <img src="Image/book.jfif" alt="" style="height: 90px;">
+                  </div>
+
+                <div class="Head" style="display: flex;justify-content: center; align-items: center;">
+                    <h4>
+                         Create your cobook
+                    </h4>
+               </div><br>
+
+               <div class="details">
+                   <!-- <div style="display: flex;justify-content: space-between;">
+                    <div style="width: 225px;"> -->
+                        <p>Book ID</p>
+                        <input type="text" id="c1" style="width:100%;height:20px;"><br><br>
+                       <!-- </div> -->
+                       <!-- <div style="width: 50%;"> -->
+                        <p>Book Title</p>
+                        <input type="text" id="c2" style="width:100%;height:20px;"><br><br>
+                       <!-- </div>
+                   </div>                    -->
+                  
+                    <!-- <div style="display: flex;justify-content: space-between;">
+                        <div style="width: 225px;"> -->
+                            <p>Date Created</p>
+                            <input type="date" id="c4" style="width:100%;height:20px;"><br><br>
+                           <!-- </div> -->
+                           <!-- <div style="width: 50%;"> -->
+                            <p>Creator</p>
+                            <input type="text" id="c5" style="width:100%;height:20px;"><br><br>
+                           <!-- </div>
+                       </div>                                                  -->
+                    <p>Reviews</p>
+                    <input type="number" id="c6" style="width:100%;height:20px;" placeholder="Review out of 5"><br><br>
+                    <p>Description</p>   
+                    <textarea name="Description" id="c3" cols="30" rows="10" style="width:100%;height:50px;"></textarea>                  
+                    <!-- <input type="text" id="c3" style="width:100%;height:50px;"><br><br> -->
+              </div><br>
+             
+              <div class="subtopics" style="display: flex;justify-content: center;align-items: center;">
+                   <p>Add subtopic for the book</p>
+              </div><br>
+
+              <div id="add">
+                <div style="display:flex;">
+                <input type="text" placeholder="Enter name here" style="height:20px;width:100%">
+                <button class="btn" style="background-color: #6558f5; color: white; border:none;padding: 0px 10px;"><span>+</span>Add</button>
+                </div>
+             </div><br>
+             <div id="rm">
+            </div><br>
+
+             <div class="Close">
+                <button class="Closes" style="padding: 5px 10px;">Close</button>
+                <button id="Save"  style="background-color: #6558f5;margin-left: 10px;padding: 5px 10px; color: white;">Save changes</button>
+            </div>
+         </div>
+      </div>
+    </div>
+</body>
+</html>

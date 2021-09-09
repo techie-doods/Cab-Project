@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{  
+    background-color:#c3cfd9;
+    width: 100%;
+    height: 100%;   
+    overflow: hidden;
+}
+
+
+.Navbar2{
+    width: 100%;
+    height: 100px;
+    background-color: white; 
+}
+.Circle-Image
+{
+    width: 100px;
+    height: 80px;  
+    background-color: white; 
+    /* background-color:rgb(180 138 180); */
+    /* border: 4px solid purple; */
+    border-radius: 50%;
+    padding: 6px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Circle-Image2{
+    width: 50px;
+    height: 50px;    
+    border-radius: 50%;
+    border: 4px solid lightgray;
+    padding: 10px;  
+    margin-top: 11px;
+    margin-right: 10px; 
+    background-color: rgb(110, 103, 103);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Navbar3{
+    width: 100%;
+    height: 80px;
+    background-color:#dfe6ed; 
+}
+.MainContent{
+    background-color: #c3cfd9;
+    width: 100%;
+    height: 570px;
+}
+.Box{
+    width: 100%;
+    height: 100px;    
+    display: flex;
+    justify-content: center; 
+}
+.RecangleBox{
+    width: 160px;
+    height: 95px; 
+    /* background-color:rgb(192 172 217); */
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Para{
+    width: 100%;
+    height: 300px;    
+}
+.Buttons{ 
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.AncharTag a{
+    font-size: 20px;
+    margin-left: 25px;
+    color: darkslategray;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.AncharTag a:hover{
+    color: rgb(129, 69, 250);
+}
+a.Focus{
+    color: rgb(129, 69, 250); 
+    border-bottom:5px solid  rgb(129, 69, 250);
+}
+
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+tr,td,th{
+    text-align: center;
+    height: 37px;
+}
+.SearchBox1 button:hover
+{
+    color: #8176f7;
+    border-color: #8176f7;
+}
+.CN h3{
+    padding-left: 175px;
+    padding-top: 21px;
+}
+
+@media(max-width: 550px){
+    .Navbar3{
+        height: 120px;
+    }
+    .AncharTag a.Active2{    
+       display: flex;
+       padding-top: 10px;
+    }
+    .AncharTag a.Active{    
+        display: flex;
+        padding-top: 40px;
+     }   
+     .MainContent
+     {
+        height: 670px;
+     }   
+    
+}
+@media(max-width: 650px){
+   
+     .CN h1{
+        font-size: 20px;
+        padding-top: 25px;
+     }
+     .CN h3{
+        font-size: 15px;
+        padding-left: 99px;
+        padding-top: 10px;
+     }
+     body{
+        overflow: visible;
+    }
+}
+@media(max-width: 1000px){
+.Buttons{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ 
+}
+@media(max-width: 600px){
+  .Navbar4{
+    height: 150px;
+  }
+     .AncharTag a.Active3{    
+        display: flex;
+       margin-top: 80px;
+     }
+     .AncharTag a.Active4{    
+        display: flex;
+        padding-top: 50px;
+     }
+
+}
+
+.bg-model{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);     
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+}
+
+.Model-content{
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border-radius: 4px;   
+    overflow-y: scroll;
+    /* animation-name: runme;
+    animation-duration: 3s;
+    animation-iteration-count: 3s; */
+}
+.Model-content::-webkit-scrollbar{
+    width: 0;
+}
+.Close{   
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+.subtopics{
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+    background-color: #dfe6ed;
+}
+/* tr:nth-child(even)
+{
+    background-color: lightgray;
+} */
+th{
+    background-color: lightgray;
+}
+.details{
+    border: 1px solid;
+    padding: 10px;
+    background-color: #c3cfd9;;
+}
+
+@keyframes runme{
+    0%{
+        width: 500px;
+        height: 300px;
+    }
+    25%{
+        width: 500px;
+        height: 300px;
+        transform: rotate(360deg);
+    }
+    50%{
+        width: 500px;
+        height: 300px;
+    }
+    75%{
+        width: 500px;
+        height: 300px;    
+    }
+    100%{
+        width: 500px;
+        height: 300px;
+    }
+}
